@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Register</title>
-  </head>
-  <body>
-    <form action="">
-      <div>
-        <label>Email</label>
-      </div>
-      <div><input type="email" name="email" id="emailRegister" required /></div>
-      <div>
-        <label>Nombre</label>
-      </div>
-      <div><input type="text" name="name" id="nameRegister" required /></div>
-      <div>
-        <label>Contraseña</label>
-      </div>
-      <div>
-        <input type="password" name="password" id="passwordRegister" required />
-      </div>
-      <div>
-        <label>Repetir contraseña</label>
-      </div>
-      <div><input type="password" name="password" id="rPasswordRegister" required /></div>
-      <div>
-        <button type="submit">Registrarse</button>
-      </div>
-    </form>
+</head>
+
+<body>
+    <div class="container">
+        <div class="containerTitle">
+            <h1 class="title">Register</h1>
+        </div>
+        <form class="registerForm" name="form">
+            <div class="containerName">
+                <label for="name" class="labelElement">Name</label>
+                <input type="name" id="name" required />
+            </div>
+            <div class="containerEmail">
+                <label for="email" class="labelElement">Email</label>
+                <input type="email" id="email" required />
+            </div>
+            <div class="containerPassword">
+                <label for="password" class="labelElement labelElements">Password</label>
+                <input type="password" id="password" required/>
+            </div>
+            <div class="containerPassword">
+                <label for="rPassword" class="labelElement labelElements">Repeat password</label>
+                <input type="rPassword" id="rPassword" required/>
+            </div>
+            <button type="submit" class="btnSend" onclick="return validationRegister();">Sign In</button>
+            <div id="error"></div>
+        </form>
+        
+    </div>
     <script src="../js/register.js"></script>
-  </body>
+</body>
+
 </html>
