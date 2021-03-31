@@ -3,7 +3,6 @@ var email = document.getElementById("email");
 var password = document.getElementById("password");
 var rPassword = document.getElementById("rPassword");
 var error = document.getElementById("error");
-var emailCheck = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
 error.style.color = "red";
 

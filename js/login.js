@@ -14,7 +14,7 @@ function validationLogin() {
   }
   if (password.value === "" || password.value === null) {
     messageError.push("Complete the password");
-  } 
+  }
   if (messageError.length == 0) {
     messageError.push("Every validation has passed");
   }
