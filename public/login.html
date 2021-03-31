@@ -9,28 +9,21 @@
     <title>Login</title>
   </head>
   <body>
-    <form action="">
-      <div>
-        <label>Email</label>
-      </div>
-      <div>
-        <input type="email" name="email" id="" required />
-      </div>
-      <div class="emailValidationLogin"></div>
-      <div>
-        <label>Contraseña</label>
-      </div>
-      <div>
-        <input type="password" name="password" id="" required />
-      </div>
-      <div class="passwordValidationLogin"></div>
-      <div>
-        <a href="./register.html">¿No tienes una cuenta?</a>
-      </div>
-      <div>
-        <button>Iniciar Sesion</button>
-      </div>
-    </form>
+    <div class="container">
+        <div class="containerTitle">
+            <h1 class="title">Login</h1>
+        </div>
+		
+		<form class="loginForm"  method="post" name="form" onsubmit="return validatedLogin()">
+			<label class="labelElement">Email</label>
+			<input autocomplete="off" type="text" name="email">
+			<div id="emailError">Please fill up your Email</div>
+			<label class="labelElement labelElements">Password</label>
+			<input type="password" name="password">
+			<div id="passwordError">Please fill up your Password</div>
+			<button type="submit">Sign In</button>
+		</form>
+	</div>	
     <script src="../js/login.js"></script>
   </body>
 </html>
