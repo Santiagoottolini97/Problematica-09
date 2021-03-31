@@ -12,10 +12,10 @@
 
 <body>
     <div class="container">
-        <div class="containerTitle">
-            <h1 class="title">Register</h1>
-        </div>
         <form class="registerForm" name="form">
+            <div class="containerTitle">
+                <h1 class="title">Register</h1>
+            </div>
             <div class="containerName">
                 <label for="name" class="labelElement">Name</label>
                 <input type="name" id="name" required />
@@ -26,16 +26,16 @@
             </div>
             <div class="containerPassword">
                 <label for="password" class="labelElement labelElements">Password</label>
-                <input type="password" id="password" required/>
+                <input type="password" id="password" required />
             </div>
             <div class="containerPassword">
                 <label for="rPassword" class="labelElement labelElements">Repeat password</label>
-                <input type="rPassword" id="rPassword" required/>
+                <input type="rPassword" id="rPassword" required />
             </div>
             <button type="submit" class="btnSend" onclick="return validationRegister();">Sign In</button>
             <div id="error"></div>
         </form>
-        
+
     </div>
     <script src="../js/register.js"></script>
 </body>

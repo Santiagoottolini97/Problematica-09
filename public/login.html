@@ -12,23 +12,24 @@
 
 <body>
     <div class="container">
-        <div class="containerTitle">
-            <h1 class="title">Login</h1>
-        </div>
         <form class="loginForm" name="form">
+            <div class="containerTitle">
+                <h1 class="title">Login</h1>
+            </div>
             <div class="containerEmail">
                 <label for="email" class="labelElement">Email</label>
                 <input type="email" id="email" required />
             </div>
             <div class="containerPassword">
                 <label for="password" class="labelElement labelElements">Password</label>
-                <input type="password" id="password" required/>
+                <input type="password" id="password" required />
             </div>
-            <button type="submit" class="btnSend" onclick="return validationLogin();">Sign In</button>
+            <button type="submit" class="btnSend" onclick="return validationLogin();">
+                Sign In
+            </button>
             <div class="linkLogin">
                 <a href="./register.html"> You don't have any account?'</a>
             </div>
-           
         </form>
         <div id="error"></div>
     </div>
