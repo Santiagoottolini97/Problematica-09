@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Register</title>
   </head>
   <body>
     <form action="">
@@ -12,23 +14,28 @@
         <label>Email</label>
       </div>
       <div><input type="email" name="email" id="" required /></div>
+      <div class="emailValidationRegister"></div>
       <div>
         <label>Nombre</label>
       </div>
       <div><input type="text" name="name" id="" required /></div>
+      <div class="nameValidationRegister"></div>
       <div>
         <label>Contraseña</label>
       </div>
       <div>
         <input type="password" name="password" id="" required />
       </div>
+      <div class="passwordValidationRegister"></div>
       <div>
         <label>Repetir contraseña</label>
       </div>
       <div><input type="password" name="password" id="" required /></div>
+      <div class="rPasswordValidationRegister"></div>
       <div>
         <button type="submit">Registrarse</button>
       </div>
     </form>
+    <script src="../js/register.js"></script>
   </body>
 </html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Login</title>
   </head>
   <body>
     <form action="">
@@ -14,12 +16,14 @@
       <div>
         <input type="email" name="email" id="" required />
       </div>
+      <div class="emailValidationLogin"></div>
       <div>
         <label>Contraseña</label>
       </div>
       <div>
         <input type="password" name="password" id="" required />
       </div>
+      <div class="passwordValidationLogin"></div>
       <div>
         <a href="./register.html">¿No tienes una cuenta?</a>
       </div>
@@ -27,5 +31,6 @@
         <button>Iniciar Sesion</button>
       </div>
     </form>
+    <script src="../js/login.js"></script>
   </body>
 </html>
