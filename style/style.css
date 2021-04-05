@@ -3,20 +3,20 @@
   margin: 0;
 }
 body {
-  background-color: #ffffff;
-  background-size: cover;
-  align-items: center;
   justify-content: center;
   display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  background-size: cover;
   font-family: sans-serif;
 }
 .container {
   position: relative;
-  margin-top: 100px;
   width: 450px;
   height: auto;
-  background: #dedede;
+  margin-top: 100px;
   border-radius: 5px;
+  background: #dedede;
   box-shadow: 9px 9px 6px 9px rgb(61, 60, 60);
 }
 .containerEmail {
@@ -33,9 +33,9 @@ body {
   padding: 20px 40px;
 }
 .loginForm .labelElement {
+  margin: 5px 0;
   font-size: 18px;
   color: #130f40;
-  margin: 5px 0;
 }
 .loginForm input {
   height: 40px;
@@ -71,18 +71,18 @@ body {
   margin-top: 30px;
 }
 .btnSend {
-  margin: 45px 0 30px 0;
   height: 45px;
   width: 100%;
-  font-size: 20px;
-  color: white;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
+  margin: 45px 0 30px 0;
   background: #1a237e;
   border-radius: 3px;
   border: 1px solid #3949ab;
   transition: 0.5s;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
 }
 .btnSend:hover {
   background: #151c6a;
@@ -90,9 +90,9 @@ body {
 #error {
   display: flex;
   justify-content: center;
-  font-size: 15px;
-  margin-bottom: 30px;
   width: 100%;
+  margin-bottom: 30px;
+  font-size: 15px;
 }
 .linkLogin {
   display: flex;
